@@ -1,0 +1,1000 @@
+ 1011  sudo docker build -t -t tests
+ 1012  sudo docker build -t  tests
+ 1013  sudo docker build -t foo
+ 1014  ls
+ 1015  sudo docker build -t foo .
+ 1016  sudo docker image ls
+ 1017  sudo docker run -p 4000:80 foo
+ 1018  sudo docker ps -a 
+ 1019  sudo docker ps 
+ 1020  curl http://localhost:4000
+ 1021  docker container ls
+ 1022  sudo docker container ls
+ 1023  sudo docker container stop
+ 1024  sudo docker container stop f4d0c216d91e
+ 1025  sudo docker container ls
+ 1026  docker login
+ 1027  sudo docker login
+ 1028  sudo docker tag foo swoec/test:V1
+ 1029  sudo docker image ls
+ 1030  sudo docker push swoec/test:V1
+ 1031  docker run -p 4000:80 swoec/test:V1
+ 1032  sudo docker run -p 4000:80 swoec/test:V1
+ 1033  gedit docker-compose.yml
+ 1034  ls
+ 1035  sudo docker swarm init
+ 1036  docker swarm init   --advertise-addr $(docker-machine ip node-1)
+ 1037  sudo docker swarm init   --advertise-addr $(docker-machine ip node-1)
+ 1038  sudo docker swarm init --advertise-addr $(docker-machine ip node-1)
+ 1039  sudo docker swarm init --advertise-addr 
+ 1040  ifconfig
+ 1041  sudo docker swarm init --advertise-addr 192.168.1.15
+ 1042  docker swarm join --token SWMTKN-1-3pbksypozkokij6k9oto2l1ts67n1bog12q94r01htf8ous9cw-b2fd5r71hzm1k04wtvt6ivv0f 192.168.1.15:2377
+ 1043  sudo docker swarm join --token SWMTKN-1-3pbksypozkokij6k9oto2l1ts67n1bog12q94r01htf8ous9cw-b2fd5r71hzm1k04wtvt6ivv0f 192.168.1.15:2377
+ 1044  sudo docker stack deploy -c docker-compose.yml getstartedlab
+ 1045  sudo docker service ls 
+ 1046  docker service ps getstartedlab_web
+ 1047  sudo docker service ps getstartedlab_web
+ 1048  sudo docker container ls -q
+ 1049  curl -4 http://localhost:4000
+ 1050  sudo docker stack rm swoec/test:V1
+ 1051  sudo docker stack rm getstartedlab
+ 1052  sudo docker container ls -q
+ 1053  sudo docker service ps getstartedlab_web
+ 1054  docker-machine create --driver virtualbox myvm1
+ 1055  docker-machine create --driver virtualbox myvm2
+ 1056  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+ 1057  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine && ;
+ 1058  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&  ;
+ 1059  $ base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+ 1060  $base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+ 1061  curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine && chmod +x /tmp/docker-machine && sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+ 1062  docker-machine version
+ 1063  docker-machine create --driver virtualbox myvm1
+ 1064  docker-machine create --driver virtualbox myvm2
+ 1065  sudo docker-machine create --driver virtualbox myvm1
+ 1066  sudo docker-machine create --driver virtualbox myvm2
+ 1067  docker-machine ls
+ 1068  sudo docker-machine ls
+ 1069  sudo apt-get install virtualbox
+ 1070  sudo docker-machine create --driver virtualbox myvm1
+ 1071  sudo docker-machine create --driver virtualbox myvm2
+ 1072  docker-machine ls
+ 1073  sudo docker-machine ls
+ 1074  docker-machine ssh myvm1 "docker swarm init --advertise-addr 192.168.99.100"
+ 1075  sudo docker-machine ssh myvm1 "docker swarm init --advertise-addr 192.168.99.100"
+ 1076  docker-machine ssh myvm2 "docker swarm join --token SWMTKN-1-5kyhf3r44wfvuy5lsi36g102iymfh37wxeps7139x44uz1lqhv-2mxwif2d3r78knogdxxnv61r3 192.168.99.100:2377"
+ 1077  sudo docker-machine ssh myvm2 "docker swarm join --token SWMTKN-1-5kyhf3r44wfvuy5lsi36g102iymfh37wxeps7139x44uz1lqhv-2mxwif2d3r78knogdxxnv61r3 192.168.99.100:2377"
+ 1078  docker-machine ssh myvm1 "docker node ls"
+ 1079  sudo docker-machine ssh myvm1 "docker node ls"
+ 1080  sudo docker stack deploy -c docker-compose.yml getstartedlab
+ 1081  sudo  docker stack ps getstartedlab
+ 1082  sudo docker stack deploy --with-registry-auth -c docker-compose.yml getstartedlab
+ 1083  sudo  docker stack ps getstartedlab
+ 1084  docker stack deploy --with-registry-auth -c docker-compose.yml getstartedlab
+ 1085  sudo docker stack deploy --with-registry-auth -c docker-compose.yml getstartedlab
+ 1086  sudo docker stack ps getstartedlab
+ 1087  ls
+ 1088  mkdir compose
+ 1089  cd compose/
+ 1090  ls
+ 1091  gedit docker-compose.yml
+ 1092  sudo docker stack deploy -c /home/alex/docker/compose/ docker-compose.yml getstartedlab
+ 1093  sudo docker stack deploy -c /home/alex/docker/compose/ docker-compose.yml getstartedlab1
+ 1094  sudo docker stack deploy -c /home/alex/docker/compose/docker-compose.yml getstartedlab1
+ 1095  docker-machine ls
+ 1096  sudo docker-machine ls
+ 1097  sudo docker stack deploy -c /home/alex/docker/compose/docker-compose.yml getstartedlab1
+ 1098  ifconfig 
+ 1099  docker stack ps getstartedlab1
+ 1100  sudo docker stack ps getstartedlab1
+ 1101  sudo docker-machine stop
+ 1102  sudo docker-machine stop $(docker-machine ls -q)
+ 1103  sudo docker-machine stop $(sudo docker-machine ls -q)
+ 1104  sudo docker stack ps getstartedlab1
+ 1105  sudo docker stack rm getstartedlab1
+ 1106  sudo docker stack ps getstartedlab1
+ 1107  docker-compose -f docker-compose.yml up
+ 1108  sudo docker-compose -f docker-compose.yml up
+ 1109  ifconfig
+ 1110  sudo docker-compose -f docker-compose.yml up
+ 1111  ls
+ 1112  sudo docker-compose -f docker-compose.yml up
+ 1113  sudo docker-compose -f docker-compose.yml . up
+ 1114  sudo docker-compose -f  . up
+ 1115  sudo docker-compose -f docker-compose.yml up
+ 1116  ls
+ 1117  git clone https://github.com/wurstmeister/kafka-docker.git
+ 1118  ls
+ 1119  cd kafka-docker/
+ 1120  ls
+ 1121  gedit docker-compose.yml 
+ 1122  docker-compose up -d
+ 1123  sudo docker-compose up -d
+ 1124  sudo docker-compose scale kafka=3
+ 1125  sudo docker-compose stop
+ 1126  telnet localhost 2181
+ 1127  telnet localhost 9092
+ 1128  telnet localhost 9094
+ 1129  ifconfig 
+ 1130  anaconda-navigator 
+ 1131  sudo python3 -m pip install elasticsearch
+ 1132  pip list
+ 1133  pip list 
+ 1134  python3 pip list 
+ 1135  python3 -m pip list 
+ 1136  ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+ 1137  kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+ 1138  ls
+ 1139  ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+ 1140  ./kafka-topics.sh --list --zookeeper localhost:2181
+ 1141  ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+ 1142  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+ 1143  sudo kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+ 1144  where kubectl
+ 1145  sudo apt-get update && sudo apt-get install -y apt-transport-https
+ 1146  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+ 1147  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+ 1148  sudo apt-get update
+ 1149  sudo apt-get install -y kubectl
+ 1150  kubectl version
+ 1151  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+ 1152  sudo kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-deployment.yaml
+ 1153  minikube start
+ 1154  curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.30.0/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
+ 1155  minikube start
+ 1156  kubectl get pods
+ 1157  kubectl logs -f POD-NAME
+ 1158  kubectl logs -f redis-master-55db5f7567-xm5ds
+ 1159  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-master-service.yaml
+ 1160  kubectl get service
+ 1161  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-deployment.yaml
+ 1162  kubectl get pods
+ 1163  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-service.yaml
+ 1164  kubectl get services
+ 1165  kubectl get pods -l app=guestbook -l tier=frontend
+ 1166  kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-service.yaml
+ 1167  kubectl get services
+ 1168  minikube service frontend --url
+ 1169  kubectl get services
+ 1170  kubectl get pods
+ 1171  kubectl get service frontend
+ 1172  kubectl delete deployment -l app=redis
+ 1173  kubectl get pods
+ 1174  cat /sys/module/apparmor/parameters/enabled
+ 1175  cd ..
+ 1176  ls
+ 1177  chmod 777 kafkatool.sh 
+ 1178  ls
+ 1179  ./kafkatool.sh 
+ 1180  docker-compose --version
+ 1181  sudo apt install docker-compose
+ 1182  docker-compose --version
+ 1183  sudo docker-compose --version
+ 1184  sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+ 1185  sudo docker-compose --version
+ 1186  sudo chmod +x /usr/local/bin/docker-compose
+ 1187  sudo apt remove  docker-compose
+ 1188  sudo pip install docker-compose --force --upgrade
+ 1189  sudo docker-compose --version
+ 1190  pip list
+ 1191  docker-compose up
+ 1192  docker-compose --version
+ 1193  pip docker-compose --version
+ 1194  docker-compose --version
+ 1195  which docker-compose
+ 1196  ln -sf /home/alex/anaconda2/bin/docker-compose
+ 1197  ln -sf /home/alex/anaconda2/bin/docker-compose /usr/bin/docker-compose
+ 1198  sudo ln -sf /home/alex/anaconda2/bin/docker-compose /usr/bin/docker-compose
+ 1199  docker-compose --version
+ 1200  cd..
+ 1201  cd ..
+ 1202  ls
+ 1203  cd docker/
+ 1204  ls
+ 1205  cd kafka/
+ 1206  ls
+ 1207  cd kafka-docker/
+ 1208  ls
+ 1209  ./start-kafka.sh 
+ 1210  ./start-kafka-shell.sh 
+ 1211  sudo ./start-kafka-shell.sh 
+ 1212  ifconfig 
+ 1213  sudo docker-compose up -d
+ 1214  sudo docker-compose scale kafka=3
+ 1215  ls
+ 1216  cd ..
+ 1217  ls
+ 1218  history > history.txt
+ 1219  ls
+ 1220  cd kafka-docker/
+ 1221  ls
+ 1222  ./create-topics.sh 
+ 1223  ./create-topics.sh test
+ 1224  cd test
+ 1225  ls
+ 1226  cd ..
+ 1227  ls
+ 1228  sudo docker-compose stop
+ 1229  ls
+ 1230  npm rum start
+ 1231  npm run start
+ 1232  ./kafka-console-producer.sh --broker-list localhost:9092 --topic test
+ 1233  ./kafka-console-producer.sh --broker-list 192.168.1.15:9092 --topic test
+ 1234  cd ..
+ 1235  ls
+ 1236  cd config/
+ 1237  ls
+ 1238  sudo gedit server.properties 
+ 1239  sudo pip install kafka-python
+ 1240  pip lists
+ 1241  pip list
+ 1242  pip install kafka-python
+ 1243  ls
+ 1244  pip list
+ 1245  sudo pip install kafka-python
+ 1246  python3 -m  pip install kafka-python
+ 1247  python3 -m  pip install bs4
+ 1248  sudo apt-get install python3-bs4
+ 1249  python3 -m pip install beautifulsoup4
+ 1250  python3 -m pip install lxml
+ 1251  pip list
+ 1252  ./kafka-server-start.sh ../config/server.properties 
+ 1253  ls
+ 1254  cd bin
+ 1255  ls
+ 1256  ./zookeeper-server-start.sh ../config/zookeeper.properties 
+ 1257  sudo update-alternatives --config x-www-browser
+ 1258  sudo update-alternatives --config gnome-www-browser
+ 1259  sudo update-alternatives --remove-all python
+ 1260  sudo ln -sf /usr/bin/python2.7 /usr/bin/python
+ 1261  show fw
+ 1262  ufs
+ 1263  ufw 
+ 1264  show ufw
+ 1265  help ufw
+ 1266  ufw --help
+ 1267  ufw status
+ 1268  sudo ufw status
+ 1269  ffmpeg
+ 1270  ls
+ 1271  cd Pictures/
+ 1272  ls
+ 1273  cd fireworks/
+ 1274  ls
+ 1275  ffmpeg -i DSC_0704.MOV 0 -c copy 0701.mp4
+ 1276  ffmpeg -i DSC_0704.MOV  -c copy 0704.mp4
+ 1277  ffmpeg -i DSC_0704.MOV -fs 30M  -c copy 0705.mp4
+ 1278  ffmpeg -i DSC_0704.MOV -vcodec libx264 -crf 20 output.mp4
+ 1279  ffmpeg -i DSC_0704.MOV -vcodec copy -acodec copy out.mp4
+ 1280  ls
+ 1281  ffmpeg
+ 1282  ffmpeg --help
+ 1283  ffmpeg -i DSC_0704.MOV -fs 19M  -c copy 0706.mp4
+ 1284  ffmpeg -i DSC_0704.MOV -fs 15M  -c copy 0706.mp4
+ 1285  ffmpeg -i DSC_0704.MOV -qscale 0  -c copy 0706.mp4
+ 1286  ffmpeg -i DSC_0704.MOV -qscale 0   0706.mp4
+ 1287  ffmpeg -i DSC_0704.MOV -qscale 3   0707.mp4
+ 1288  $ANDROID_HOME
+ 1289  echo $ANDROID_HOME
+ 1290  appium-doctor
+ 1291  pwd
+ 1292  ls
+ 1293  echo $ANDROID_HOME
+ 1294  npm install -g appium
+ 1295  sudo npm install -g appium
+ 1296  brew install node
+ 1297  sudo apt install linuxbrew-wrapper
+ 1298  brew install node
+ 1299  npm install -g appium
+ 1300  sudo npm install -g appium
+ 1301  gedit /home/alex/.npm/_logs/2018-11-12T21_32_10_527Z-debug.log
+ 1302  sudo npm install -g  appium
+ 1303  npm install appium-doctor -g
+ 1304  sudo npm install appium-doctor -g
+ 1305  appium-doctor
+ 1306  nano $HOME/.bashrc
+ 1307  gedit $HOME/.bashrc
+ 1308  appium-doctor
+ 1309  gedit $HOME/.bashrc
+ 1310  source $HOME/.bashrc
+ 1311  appium-doctor
+ 1312  whereis android
+ 1313  whereis android-sdk
+ 1314  cd /usr/lib/android-sdk/
+ 1315  ls
+ 1316  gedit $HOME/.bashrc
+ 1317  ls
+ 1318  cd tools/
+ 1319  ls
+ 1320  gedit $HOME/.bashrc
+ 1321  ls
+ 1322  cd ..
+ 1323  ls
+ 1324  cd tools
+ 1325  ls
+ 1326  cd bin/
+ 1327  ls
+ 1328  cd ..
+ 1329  ls
+ 1330  cd ..
+ 1331  ls
+ 1332  cd platforms/
+ 1333  ls
+ 1334  cd android-23/
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd ..
+ 1339  ls
+ 1340  cd platform-tools/
+ 1341  ls
+ 1342  cd ..
+ 1343  ls
+ 1344  cd platform-tools/
+ 1345  ls
+ 1346  gedit $HOME/.bashrc
+ 1347  appium-doctor
+ 1348  gedit $HOME/.bashrc
+ 1349  source $HOME/.bashrc
+ 1350  appium-doctor
+ 1351  android
+ 1352  ionic platform
+ 1353  ls
+ 1354  cd tools
+ 1355  ls
+ 1356  cd bin/
+ 1357  ls
+ 1358  cd ..
+ 1359  ls
+ 1360  cd proguard/
+ 1361  ls
+ 1362  cd bin/
+ 1363  ls
+ 1364  cd ..
+ 1365  ls
+ 1366  cd ..
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  cd build-tools/
+ 1371  ls
+ 1372  cd 24.0.0
+ 1373  ls
+ 1374  cd .. 
+ 1375  ls
+ 1376  cd ..
+ 1377  ls
+ 1378  cd tools
+ 1379  ls
+ 1380  ./draw9patch 
+ 1381  ./screenshot2 
+ 1382  ls
+ 1383  cd bin
+ 1384  ls
+ 1385  cd ..
+ 1386  ls
+ 1387  cd ..
+ 1388  ls
+ 1389  cd tools/
+ 1390  ls
+ 1391  cd ..
+ 1392  cd /home/alex/android-sdk/
+ 1393  ls
+ 1394  cd tools/
+ 1395  ls
+ 1396  ./emulator
+ 1397  ./emulator -avd foo
+ 1398  sudo ./emulator -avd foo
+ 1399  sudo ./emulator -list-avds
+ 1400  sudo ./emulator -avd foo
+ 1401  sudo ./emulator -list-avds
+ 1402  sudo ./emulator -avd foo
+ 1403  ls
+ 1404  chmor 777 appium-desktop-1.8.2-x86_64.AppImage 
+ 1405  chmod 777 appium-desktop-1.8.2-x86_64.AppImage 
+ 1406  ls
+ 1407  ./appium-desktop-1.8.2-x86_64.AppImage 
+ 1408  gedit $HOME/.bashrc
+ 1409  source $HOME/.bashrc
+ 1410  ls -al /dev/kvm
+ 1411  grep kvm /etc/group
+ 1412  sudo adduser alex kvm
+ 1413  grep kvm /etc/group
+ 1414  ls
+ 1415  cd android-sdk/
+ 1416  ls
+ 1417  cd tools/
+ 1418  ls
+ 1419  ./emulator -live-devices
+ 1420  ./emulator -avd foo
+ 1421  ls
+ 1422  cd ..
+ 1423  ls
+ 1424  cd ..
+ 1425  cd android-studio/
+ 1426  ls
+ 1427  cd bin
+ 1428  ls
+ 1429  ./studio.sh 
+ 1430  npm list 
+ 1431  cd ..
+ 1432  npm list
+ 1433  whereis chrome
+ 1434  whereis chromedriver
+ 1435  npm --list
+ 1436  npm list
+ 1437  npm install chromedriver -g
+ 1438  sudo npm install chromedriver -g
+ 1439  npm install -g npm@latest
+ 1440  sudo npm install -g npm@latest
+ 1441  node
+ 1442  exit
+ 1443  ls
+ 1444  cd bin
+ 1445  ls
+ 1446  sudo apt-get remove nodejs
+ 1447  ls
+ 1448  ./node 
+ 1449  node -v
+ 1450  cd ..
+ 1451  ls
+ 1452  cd share/
+ 1453  ls
+ 1454  cd ..
+ 1455  ls
+ 1456  cd lib/
+ 1457  ls
+ 1458  cd node_modules/
+ 1459  ls
+ 1460  cd npm/
+ 1461  ls
+ 1462  cd ..
+ 1463  ls
+ 1464  cd ..
+ 1465  ls
+ 1466  cd bin
+ 1467  ls
+ 1468  cd ..
+ 1469  ls
+ 1470  gedit README.md 
+ 1471  node -v
+ 1472  ls
+ 1473  cd bin
+ 1474  ls
+ 1475  ./node -v
+ 1476  ./npm -v
+ 1477  ls
+ 1478  chmod o+x npm 
+ 1479  ls
+ 1480  ls -al
+ 1481  ls
+ 1482  node -v
+ 1483  ./node -v
+ 1484  ./npm -v
+ 1485  ls
+ 1486  cd ..
+ 1487  ls
+ 1488  cd lib
+ 1489  ls
+ 1490  cd node_modules/
+ 1491  ls
+ 1492  cd npm/
+ 1493  ls
+ 1494  cd bin
+ 1495  ls
+ 1496  ./npm -v
+ 1497  ls
+ 1498  ./npm 
+ 1499  npm -v
+ 1500  cd ..
+ 1501  ls
+ 1502  cd bin
+ 1503  ls
+ 1504  cd ..
+ 1505  ls
+ 1506  make
+ 1507  ls
+ 1508  node -v
+ 1509  sudo apt-get update
+ 1510  sudo apt-get install nodejs
+ 1511  node -v
+ 1512  npm -v
+ 1513  sudo apt install npm
+ 1514  npm -v
+ 1515  sudo npm install yo -g
+ 1516  sudo npm install -g bower 
+ 1517  sudo npm install -g express-generator
+ 1518  sudo npm install -gd express    --save
+ 1519  ls
+ 1520  pwd
+ 1521  cd ..
+ 1522  ls
+ 1523  cd Desktop/
+ 1524  ls
+ 1525  ln  /home/alex/Downloads/firefox/firefox /home/alex/Desktop/firefox
+ 1526  ls
+ 1527  ln -s /home/alex/Downloads/firefox/firefox /home/alex/Desktop/firefox
+ 1528  ls
+ 1529  chmod 111 firefox 
+ 1530  ls
+ 1531  ls -al
+ 1532  chmod 777 firefox 
+ 1533  ls
+ 1534  cd /home/alex
+ 1535  ls
+ 1536  history > history.txt
+ 1537  gedit history.txt 
+ 1538  gedit $HOME/.bashrc
+ 1539  sudo npm install appium-doctor -g
+ 1540  appium-doctor
+ 1541  sudo npm install chromedriver -g
+ 1542  npm list -g
+ 1543  sudo npm install appium --chromedriver_version="2.42"
+ 1544  sudo npm install appium --chromedriver_version="2.20"
+ 1545  chromedriver -v
+ 1546  git clone https://github.com/swoec/CV.git
+ 1547  ls
+ 1548  git clone https://github.com/swoec/CV.git
+ 1549  ls
+ 1550  cd Desktop/
+ 1551  ls
+ 1552  git clone https://github.com/swoec/CV.git
+ 1553  ls
+ 1554  cd CV
+ 1555  s
+ 1556  ls
+ 1557  git clone
+ 1558  git clone https://github.com/swoec/cucumber-selenuim-appium-moven.git
+ 1559  git add -A
+ 1560  ls
+ 1561  cd cucumber-selenuim-appium-moven/
+ 1562  ls
+ 1563  git add -A
+ 1564  git commit -m "update"
+ 1565  git push
+ 1566  anaconda-navigator 
+ 1567  cd /home/alex/Desktop/
+ 1568  ls
+ 1569  cd CV/
+ 1570  git diff
+ 1571  git clone https://github.com/swoec/test.git
+ 1572  ls
+ 1573  cd test
+ 1574  gedit test.txt
+ 1575  git status
+ 1576  git check -b test1
+ 1577  git checkout -b test1
+ 1578  ls
+ 1579  gedit test.txt 
+ 1580  git status
+ 1581  git add test.txt 
+ 1582  git commit -m "2"
+ 1583  git push
+ 1584  git branch
+ 1585  git push --set-upstream origin test1
+ 1586  git checkout -b test2
+ 1587  gedit test2.txt
+ 1588  ls
+ 1589  git status
+ 1590  git add test2.txt 
+ 1591  git commit -m "3"
+ 1592  git push
+ 1593  git push --set-upstream origin test2
+ 1594  sudo apt-get install xclip
+ 1595  xclip -sel clip < ~/.ssh/id_rsa.pub
+ 1596  ls -al ~/.ssh
+ 1597  ssh-keygen -t rsa -b 4096 -C "swoec.wang@gmail.com"
+ 1598  eval "$(ssh-agent -s)"
+ 1599  ssh-add ~/.ssh/id_rsa
+ 1600  xclip -sel clip < ~/.ssh/id_rsa.pub
+ 1601  ssh-keygen -t rsa -b 4096 -C "swoec.wang@gmail.com"
+ 1602  eval "$(ssh-agent -s)"
+ 1603  ssh-add ~/.ssh/id_rsa
+ 1604  xclip -sel clip < ~/.ssh/id_rsa.pub
+ 1605  git status
+ 1606  ls
+ 1607  rm -rf key.txt
+ 1608  ls
+ 1609  git status
+ 1610  rm -rf key.txt.pub 
+ 1611  git status
+ 1612  git branch
+ 1613  gedit test3.txt
+ 1614  git status
+ 1615  git add test3.txt 
+ 1616  git status
+ 1617  git commit -m "4"
+ 1618  git push
+ 1619  gedit test5.txt
+ 1620  git add test5.txt 
+ 1621  git status
+ 1622  git branch
+ 1623  git log
+ 1624  git rebase -i 2a335f53fb83854f12dc54c23373221d2d6b2c0e
+ 1625  git status
+ 1626  git stash
+ 1627  git status
+ 1628  git rebase -i 2a335f53fb83854f12dc54c23373221d2d6b2c0e
+ 1629  git status
+ 1630  ls
+ 1631  git stash pop
+ 1632  git status
+ 1633  ls
+ 1634  git log
+ 1635  git rebase -i 1a4d47e3d65f517168f322e0302eb0c69b5c11f0
+ 1636  git stash
+ 1637  git rebase -i 1a4d47e3d65f517168f322e0302eb0c69b5c11f0
+ 1638  git status
+ 1639  ls 
+ 1640  git status
+ 1641  ls
+ 1642  gedit test2.txt 
+ 1643  gedit test3.txt 
+ 1644  gedit test.txt 
+ 1645  git stash pop
+ 1646  ls
+ 1647  gedit test.txt 
+ 1648  git status
+ 1649  git log
+ 1650  git rebase -i 2a335f53fb83854f12dc54c23373221d2d6b2c0e
+ 1651  git status 
+ 1652  git add test.txt 
+ 1653  git add test5.txt 
+ 1654  git rebase -i 2a335f53fb83854f12dc54c23373221d2d6b2c0e
+ 1655  git commit -m "5"
+ 1656  git rebase -i 2a335f53fb83854f12dc54c23373221d2d6b2c0e
+ 1657  ls
+ 1658  gedit test.txt 
+ 1659  git branch
+ 1660  git checkout -b test3
+ 1661  git branch
+ 1662  gedit test.txt 
+ 1663  git add test.txt 
+ 1664  git commit -m "6"
+ 1665  git branch test2
+ 1666  git checkout test2
+ 1667  gedit test.txt 
+ 1668  git add test.txt 
+ 1669  git commit -m "7"
+ 1670  git checkout test3 
+ 1671  git pull
+ 1672  git merge test2
+ 1673  git branch
+ 1674  ls
+ 1675  gedit test.txt 
+ 1676  git add  test.txt 
+ 1677  git commit -m "8"
+ 1678  git log
+ 1679  git rebase -i d9941ef4dad265928779f44aef837000d418b19c
+ 1680  git rebase --continue 
+ 1681  git rebase -i d9941ef4dad265928779f44aef837000d418b19c
+ 1682  git rebase --continue 
+ 1683  git rebase --edit-todo 
+ 1684  git log
+ 1685  git branch
+ 1686  git checkout test3
+ 1687  git branch
+ 1688  ls
+ 1689  gedit test.txt 
+ 1690  git add test.txt 
+ 1691  git commit -m "9"
+ 1692  gedit test.txt 
+ 1693  git add test.txt 
+ 1694  git commit -m "10"
+ 1695  git log
+ 1696  git rebase -i 937924fd0893947034be9451dde395398407fe41
+ 1697  git rebase --continue 
+ 1698  git rebase -i 937924fd0893947034be9451dde395398407fe41
+ 1699  ls
+ 1700  gedit test.txt 
+ 1701  git branch
+ 1702  ls
+ 1703  rm -rf test*
+ 1704  ls
+ 1705  git branch
+ 1706  git status
+ 1707  git -rm test*
+ 1708  git help
+ 1709  git rm 
+ 1710  git rm -f test*
+ 1711  ls
+ 1712  git status
+ 1713  git commit -m "detele"
+ 1714  git status
+ 1715  git checkout test2
+ 1716  ls
+ 1717  git checkout test3
+ 1718  git log
+ 1719  git rebase -i 1772a655b3da47dccb9272b3da4d3cd4c6ce2577
+ 1720  ls
+ 1721  git rebase --abort
+ 1722  ls
+ 1723  gedit test.txt 
+ 1724  git log
+ 1725  ls
+ 1726  gedit text1.txt
+ 1727  git add text1.txt 
+ 1728  git commit -m "new"
+ 1729  gedit text1.txt 
+ 1730  git add text1.txt 
+ 1731  git commit -m "new1"
+ 1732  gedit text1.txt 
+ 1733  git add text1.txt 
+ 1734  git commit -m "new2"
+ 1735  git log
+ 1736  git rebase -i 8d27794cae948b8882377dd0bf909ece44cb935d
+ 1737  ls
+ 1738  gedit text1.txt 
+ 1739  git log
+ 1740  git rebase -i d8fce684ff1ba678d5a206db7364152379b934f6
+ 1741  git log
+ 1742  gedit text1.txt 
+ 1743  git rebase -i test2
+ 1744  gedit test.txt 
+ 1745  git rebase --continue
+ 1746  git status
+ 1747  git add test.txt 
+ 1748  git commit -m "merge"
+ 1749  git status
+ 1750  git rebase --continue
+ 1751  ls
+ 1752  gedit test.txt 
+ 1753  git log
+ 1754  git branch
+ 1755  git push
+ 1756  git push --set-upstream origin test3
+ 1757  eval "$(ssh-agent -s)"
+ 1758  ssh-add ~/.ssh/id_rsa
+ 1759  git push --set-upstream origin test3
+ 1760  git pull
+ 1761  git push
+ 1762  ls -al ~/.ssh
+ 1763  ssh-keygen -t rsa -b 4096 -C "swoec.wang@gmail.com"
+ 1764  eval "$(ssh-agent -s)"
+ 1765  ssh-add ~/.ssh/id_rsa
+ 1766  xclip -sel clip < ~/.ssh/id_rsa.pub
+ 1767  ssh -T git@github.com
+ 1768  git show remote origin
+ 1769  git remote  show origin
+ 1770  git remote -v
+ 1771  git config -e --system
+ 1772  git remote -v
+ 1773  ls
+ 1774  gedit text2.txt
+ 1775  git add text2.txt 
+ 1776  git commit -m "text2"
+ 1777  git push
+ 1778  git push origin test2
+ 1779  git remote set-url origin git@github.com:swoec/test.git
+ 1780  git push
+ 1781  ls
+ 1782  git remote set-url origin git@github.com:swoec/cv.git
+ 1783  git remote -v
+ 1784  git status
+ 1785  git add  Alex-Wang\ \(data\).DOCX 
+ 1786  git commit -m "update"
+ 1787  git push
+ 1788  netstat -anp | grep 3306
+ 1789  gradle -v
+ 1790  ./idea.sh 
+ 1791  sudo apt-get remoe webstore
+ 1792  sudo apt-get remove webstore
+ 1793  make
+ 1794  ls
+ 1795  cd src/
+ 1796  ls
+ 1797  ./redis-server 
+ 1798  ./redis-cli 
+ 1799  cd workspace/
+ 1800  cd node/
+ 1801  ls
+ 1802  cd node_modules/
+ 1803  ls
+ 1804  find monk
+ 1805  sudo rm -rf monk
+ 1806  find monk
+ 1807  whereis monk
+ 1808  ls
+ 1809  cd bin/
+ 1810  ls
+ 1811  ./webstorm.sh 
+ 1812  curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+ 1813  sudo apt-get install gcc g++ make
+ 1814  ls
+ 1815  ./webstorm.sh 
+ 1816  cd Downloads/
+ 1817  ls
+ 1818  chmod 777 ReadyAPI-x64-2.5.0_R614665414080.sh 
+ 1819  ./ReadyAPI-x64-2.5.0_R614665414080.sh 
+ 1820  cd Downloads/
+ 1821  ls
+ 1822  chmod 777 studio-3t-linux-x64.sh 
+ 1823  ./studio-3t-linux-x64.sh 
+ 1824  git status
+ 1825  git add -A
+ 1826  git commit -m "update"
+ 1827  git push
+ 1828  git status
+ 1829  git add -A
+ 1830  git commit -m "update"
+ 1831  git push
+ 1832  git pull
+ 1833  git status
+ 1834  git push
+ 1835  git status
+ 1836  git add -A
+ 1837  git commit -m "update"
+ 1838  git push
+ 1839  ls
+ 1840  cd Downloads/
+ 1841  cd WebStorm-182.5107.19/
+ 1842  ls
+ 1843  cd bin
+ 1844  ls
+ 1845  ./webstorm.sh 
+ 1846  sudo rm -rf /home/alex/workspace/node/node_modules/mongodb
+ 1847  npm url -v
+ 1848  npm path -v
+ 1849  npm http -v
+ 1850  npm express -v
+ 1851  npm express --version
+ 1852  body-parse  --version
+ 1853  body-parser  --version
+ 1854  npm body-parser  --version
+ 1855  npm list
+ 1856  express-useragent --version
+ 1857  npm express-useragent --version
+ 1858  npm chai --version
+ 1859  npm view chai version
+ 1860  cd /home/alex/
+ 1861  cd workspace/
+ 1862  ls
+ 1863  cd node/
+ 1864  ls
+ 1865  git clone https://github.com/JamesWClark/Google-Web-Login.git
+ 1866  git clone https://github.com/swoec/lighttalk.git
+ 1867  git add -A
+ 1868  ls
+ 1869  cd lighttalk/
+ 1870  ls
+ 1871  git add -A
+ 1872  git commit -m "init"
+ 1873  git push
+ 1874  npm view http version
+ 1875  npm install selenium-webdriver -g
+ 1876  sudo npm install selenium-webdriver -g
+ 1877  ls
+ 1878  cd ..
+ 1879  ls
+ 1880  cd test
+ 1881  ls
+ 1882  mocha lignttalktest.js 
+ 1883  ls
+ 1884  node test.js 
+ 1885  mocha lignttalktest.js 
+ 1886  npm install selenium-mocha
+ 1887  npm install selenium-mocha -g
+ 1888  sudo npm install selenium-mocha -g
+ 1889  mocha lignttalktest.js 
+ 1890  sudo npm install selenium-webdriver -g
+ 1891  whereis chromedriver
+ 1892  gedit /etc/profile
+ 1893  gedit ~/.bashrc
+ 1894  echo $PATH
+ 1895  source ~/.bashrc
+ 1896  echo $PATH
+ 1897  ls
+ 1898  node test.js 
+ 1899  ls
+ 1900  node googletest.js 
+ 1901  sudo npm install gnode -g
+ 1902  npm view mocha version
+ 1903  npm view request version
+ 1904  ls
+ 1905  npm test
+ 1906  ls
+ 1907  npm test test.js 
+ 1908  npm test newtest.js 
+ 1909  pwd
+ 1910  npm test /home/alex/workspace/node/lighttalk/test
+ 1911  npm test /home/alex/workspace/node/lighttalk/test/test.js 
+ 1912  npm test /home/alex/workspace/node/lighttalk/test/lignttalktest.js 
+ 1913  npm test /home/alex/workspace/node/lighttalk/test/mochatest.js 
+ 1914  npm test /home/alex/workspace/node/lighttalk/test/newtest.js 
+ 1915  npm test /home/alex/workspace/node/lighttalk/test/mochatest.js 
+ 1916  npm test 
+ 1917  npm test -- /home/alex/workspace/node/lighttalk/test/lignttalktest.js 
+ 1918  gedit 
+ 1919  npm test -- /home/alex/workspace/node/lighttalk/test/lignttalktest.js 
+ 1920  sudo npm install chai -g
+ 1921  npm test -- /home/alex/workspace/node/lighttalk/test/lignttalktest.js 
+ 1922  sudo npm install -g chai-as-promised
+ 1923  npm test -- /home/alex/workspace/node/lighttalk/test/lignttalktest.js 
+ 1924  git add -A
+ 1925  git commit -m "update"
+ 1926  git push
+ 1927  git pull
+ 1928  git status
+ 1929  git push
+ 1930  ls
+ 1931  cd workspace/
+ 1932  ls
+ 1933  cd node/
+ 1934  ls
+ 1935  cd lighttalk/
+ 1936  ls
+ 1937  cd lighttalk/
+ 1938  git pull
+ 1939  git status
+ 1940  git config --global user.name "Alex"
+ 1941  git config --global user.email "swoec.wang@gmail.com"
+ 1942  git remote rename origin old-origin
+ 1943  git remote add origin https://gitlab.com/StuffNZRecruitment/alex-wang-lightning-talk-exercise.git
+ 1944  git push -u origin --all
+ 1945  git push -u origin --tags
+ 1946  cd ..
+ 1947  ls
+ 1948  cd Downloads/
+ 1949  ls
+ 1950  cd WebStorm-182.5107.19/
+ 1951  ls
+ 1952  cd bin/
+ 1953  ls
+ 1954  chmod 0700 /home/alex
+ 1955  ls
+ 1956  chmod 0777 /home/alex
+ 1957  ls
+ 1958  ssh localhost
+ 1959  gedit /etc/host.conf 
+ 1960  sudo gedit /etc/host.conf 
+ 1961  sudo gedit /etc/sysctl.conf 
+ 1962  sudo gedit /etc/host.conf 
+ 1963  sudo gedit /etc/sysctl.conf 
+ 1964  sudo sysctl -p 
+ 1965  sudo gedit /etc/host.conf 
+ 1966  sudo sysctl -p 
+ 1967  sudo gedit /etc/host.conf 
+ 1968  cd history/
+ 1969  ls
+ 1970  history > history031218.txt
+ 1971  python history.py 
+ 1972  cd workspace/
+ 1973  ls
+ 1974  rm -rf env4mooc/
+ 1975  ls
+ 1976  mkvirtualenv env4mooc
+ 1977  ls
+ 1978  deactivate
+ 1979  workon env4mooc
+ 1980  pyenv -version
+ 1981  pyenv versions
+ 1982  pyenv install -l
+ 1983  clear
+ 1984  pyenv install -l
+ 1985  python
+ 1986  ls -la ~/.pyenv/plugins/
+ 1987  ls
+ 1988  pyenv version
+ 1989  pyenv versions
+ 1990  cd mooc/
+ 1991  ls
+ 1992  python
+ 1993  deactivate
+ 1994  pyenv workon mooc
+ 1995  pyenv activate mooc
+ 1996  clear
+ 1997  pyenv 
+ 1998  pyenv
+ 1999  ls
+ 2000  cd workspace/ls
+ 2001  ls
+ 2002  pwd
+ 2003  cd workspace/
+ 2004  ls
+ 2005  cd mooc/
+ 2006  ls
+ 2007  pyenv activate mooc
+ 2008  ls
+ 2009  python
+ 2010  history > histroy.txt
